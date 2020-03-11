@@ -28,25 +28,18 @@ if doGaussian
 end
 
 %-------------------------------------------------------------------------------
-% Top 10:
-%-------------------------------------------------------------------------------
-for i = 1:10
-
-end
-
-%-------------------------------------------------------------------------------
 % Word search:
 %-------------------------------------------------------------------------------
 % - Build cell array of unique words and counts.
-result = [words_us, num2cell(counts_s)];
-
-for tt = 1:5
-
-    prompt = 'What word should you search \n';
-    word=input(prompt,'s');
-
-    jid = find(strcmp(word, result));
-    title({['What is the rank of ', word,'? ', num2str(jid)], ...
-        ['And how often is that? ' , num2str(result{jid,2})]});
-
-end
+% result = [words_us, num2cell(counts_s)];
+%
+% for tt = 1:5
+%
+%     prompt = 'What word should you search: \n';
+%     word = input(prompt,'s');
+%
+%     jid = find(strcmp(word, result));
+%     title({['What is the rank of ', word,'? ', num2str(jid)], ...
+%         ['And how often is that? ' , num2str(result{jid,2})]});
+%
+% end
